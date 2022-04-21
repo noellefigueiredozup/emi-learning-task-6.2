@@ -13,7 +13,7 @@
 		584E2E67280DC3510039B1FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 584E2E66280DC3510039B1FF /* Assets.xcassets */; };
 		584E2E6A280DC3510039B1FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 584E2E68280DC3510039B1FF /* LaunchScreen.storyboard */; };
 		584E2E72280DCC4C0039B1FF /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584E2E71280DCC4C0039B1FF /* TableHeaderView.swift */; };
-		584E2E74280EFDFD0039B1FF /* TransactionImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584E2E73280EFDFD0039B1FF /* TransactionImageView.swift */; };
+		584E2E74280EFDFD0039B1FF /* TransacaoImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584E2E73280EFDFD0039B1FF /* TransacaoImageView.swift */; };
 		584E2E7B280F2B4E0039B1FF /* ContasAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584E2E7A280F2B4E0039B1FF /* ContasAPI.swift */; };
 		584E2E85280F53830039B1FF /* Custom+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584E2E84280F53830039B1FF /* Custom+UIColor.swift */; };
 		584E2E9028105E480039B1FF /* ContaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584E2E8F28105E480039B1FF /* ContaViewController.swift */; };
@@ -28,7 +28,7 @@
 		584E2E69280DC3510039B1FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		584E2E6B280DC3510039B1FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		584E2E71280DCC4C0039B1FF /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
-		584E2E73280EFDFD0039B1FF /* TransactionImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionImageView.swift; sourceTree = "<group>"; };
+		584E2E73280EFDFD0039B1FF /* TransacaoImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransacaoImageView.swift; sourceTree = "<group>"; };
 		584E2E7A280F2B4E0039B1FF /* ContasAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContasAPI.swift; sourceTree = "<group>"; };
 		584E2E84280F53830039B1FF /* Custom+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Custom+UIColor.swift"; sourceTree = "<group>"; };
 		584E2E8F28105E480039B1FF /* ContaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaViewController.swift; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				584E2E71280DCC4C0039B1FF /* TableHeaderView.swift */,
-				584E2E73280EFDFD0039B1FF /* TransactionImageView.swift */,
+				584E2E73280EFDFD0039B1FF /* TransacaoImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -214,7 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				584E2E74280EFDFD0039B1FF /* TransactionImageView.swift in Sources */,
+				584E2E74280EFDFD0039B1FF /* TransacaoImageView.swift in Sources */,
 				584E2E72280DCC4C0039B1FF /* TableHeaderView.swift in Sources */,
 				584E2E7B280F2B4E0039B1FF /* ContasAPI.swift in Sources */,
 				584E2E85280F53830039B1FF /* Custom+UIColor.swift in Sources */,
