@@ -34,34 +34,34 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="aCJ-6l-SQq">
-                                <rect key="frame" x="0.0" y="49.5" width="414" height="90.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TransacaoCell" id="aCJ-6l-SQq" customClass="TransacaoTableViewCell" customModule="LearningTask_6_2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="49.5" width="414" height="88.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aCJ-6l-SQq" id="xA1-J3-dhD">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="90.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="88.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="pvK-HE-5yl" userLabel="Conteiner Stack View">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="88.5"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NAu-fJ-igE" customClass="TransacaoImageView" customModule="LearningTask_6_2" customModuleProvider="target">
-                                                    <rect key="frame" x="24" y="20" width="131.5" height="50"/>
+                                                    <rect key="frame" x="24" y="20" width="48" height="48"/>
                                                     <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 </view>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="1uG-Yu-MyV" userLabel="Main Stack View">
-                                                    <rect key="frame" x="179.5" y="20" width="210.5" height="38"/>
+                                                    <rect key="frame" x="96" y="20" width="294" height="38"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Pyx-C5-toI" userLabel="Titulo Stack View">
-                                                            <rect key="frame" x="0.0" y="0.0" width="210.5" height="17"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="294" height="17"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Transferência enviada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4DG-d2-aZJ">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="152.5" height="17"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="236" height="17"/>
                                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12 SET." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUN-bK-6Nf" userLabel="Data Label">
-                                                                    <rect key="frame" x="164.5" y="0.0" width="46" height="17"/>
+                                                                    <rect key="frame" x="248" y="0.0" width="46" height="17"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                                                     <color key="textColor" systemColor="secondaryLabelColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -69,19 +69,19 @@
                                                             </subviews>
                                                         </stackView>
                                                         <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rafael Rollo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qAh-uM-K5m" userLabel="Interessado Label">
-                                                            <rect key="frame" x="0.0" y="19" width="210.5" height="0.0"/>
+                                                            <rect key="frame" x="0.0" y="19" width="294" height="0.0"/>
                                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                                             <color key="textColor" systemColor="secondaryLabelColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 2.500,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQh-5a-AKc" userLabel="Valor Transacao Label">
-                                                            <rect key="frame" x="0.0" y="21" width="210.5" height="17"/>
+                                                            <rect key="frame" x="0.0" y="21" width="294" height="17"/>
                                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                                             <color key="textColor" systemColor="secondaryLabelColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pix" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUH-RL-vXv" userLabel="Subtipo Transacao Label">
-                                                            <rect key="frame" x="0.0" y="38" width="210.5" height="0.0"/>
+                                                            <rect key="frame" x="0.0" y="38" width="294" height="0.0"/>
                                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
                                                             <color key="textColor" systemColor="secondaryLabelColor"/>
                                                             <nil key="highlightedColor"/>
@@ -99,6 +99,14 @@
                                         <constraint firstAttribute="trailing" secondItem="pvK-HE-5yl" secondAttribute="trailing" id="df6-kS-YPt"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dataLabel" destination="YUN-bK-6Nf" id="4Xh-rP-np1"/>
+                                    <outlet property="interessadoLabel" destination="qAh-uM-K5m" id="mCw-9x-yh9"/>
+                                    <outlet property="subtipoLabel" destination="xUH-RL-vXv" id="cy9-un-WcI"/>
+                                    <outlet property="tituloLabel" destination="4DG-d2-aZJ" id="wDE-KC-FRj"/>
+                                    <outlet property="transacaoImageView" destination="NAu-fJ-igE" id="TBk-oh-rZ7"/>
+                                    <outlet property="valorTransacaoLabel" destination="zQh-5a-AKc" id="JVf-ao-CBc"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -113,6 +121,11 @@
             <point key="canvasLocation" x="-43" y="81"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="NAu-fJ-igE">
+            <size key="intrinsicContentSize" width="48" height="48"/>
+        </designable>
+    </designables>
     <resources>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
