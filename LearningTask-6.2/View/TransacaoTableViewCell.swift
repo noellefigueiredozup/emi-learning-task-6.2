@@ -19,9 +19,9 @@ class TransacaoTableViewCell: UITableViewCell {
     func setup(_ transacao: Transacao) {
         transacaoImageView.tipoDeTransacao = transacao.tipo
         tituloLabel.text = transacao.tipo.titulo
-        dataLabel.text = transacao.data.description
-        valorTransacaoLabel.text = String(describing: transacao.valor)
-        
+        dataLabel.text = DateFormatter.format(date: transacao.data, to: .dayPlusAbbreviatedMonth)
+        valorTransacaoLabel.text = NumberFormatter.formatToCurrency(decimal: transacao.valor)
+
         if let interessado = transacao.interessado {
             interessadoLabel.text = interessado
             interessadoLabel.isHidden = false

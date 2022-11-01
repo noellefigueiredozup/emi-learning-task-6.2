@@ -19,6 +19,9 @@
 		584E2E9028105E480039B1FF /* ContaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584E2E8F28105E480039B1FF /* ContaViewController.swift */; };
 		D9F39AB529114D6D004CFE4F /* TransacaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F39AB429114D6D004CFE4F /* TransacaoTableViewCell.swift */; };
 		D9F39AB8291157FE004CFE4F /* Transacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F39AB7291157FE004CFE4F /* Transacao.swift */; };
+		D9F39ABB29116F90004CFE4F /* CustomPatterns+DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F39ABA29116F90004CFE4F /* CustomPatterns+DateFormatter.swift */; };
+		D9F39ABD29117024004CFE4F /* Currency+NumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F39ABC29117024004CFE4F /* Currency+NumberFormatter.swift */; };
+		D9F39ABF291170B1004CFE4F /* Conta.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F39ABE291170B1004CFE4F /* Conta.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		584E2E8F28105E480039B1FF /* ContaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaViewController.swift; sourceTree = "<group>"; };
 		D9F39AB429114D6D004CFE4F /* TransacaoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransacaoTableViewCell.swift; sourceTree = "<group>"; };
 		D9F39AB7291157FE004CFE4F /* Transacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transacao.swift; sourceTree = "<group>"; };
+		D9F39ABA29116F90004CFE4F /* CustomPatterns+DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomPatterns+DateFormatter.swift"; sourceTree = "<group>"; };
+		D9F39ABC29117024004CFE4F /* Currency+NumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Currency+NumberFormatter.swift"; sourceTree = "<group>"; };
+		D9F39ABE291170B1004CFE4F /* Conta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conta.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				584E2E84280F53830039B1FF /* Custom+UIColor.swift */,
+				D9F39ABA29116F90004CFE4F /* CustomPatterns+DateFormatter.swift */,
+				D9F39ABC29117024004CFE4F /* Currency+NumberFormatter.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -153,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				D9F39AB7291157FE004CFE4F /* Transacao.swift */,
+				D9F39ABE291170B1004CFE4F /* Conta.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -231,9 +240,12 @@
 				584E2E74280EFDFD0039B1FF /* TransacaoImageView.swift in Sources */,
 				584E2E72280DCC4C0039B1FF /* TableHeaderView.swift in Sources */,
 				D9F39AB8291157FE004CFE4F /* Transacao.swift in Sources */,
+				D9F39ABF291170B1004CFE4F /* Conta.swift in Sources */,
 				584E2E7B280F2B4E0039B1FF /* ContasAPI.swift in Sources */,
+				D9F39ABD29117024004CFE4F /* Currency+NumberFormatter.swift in Sources */,
 				584E2E85280F53830039B1FF /* Custom+UIColor.swift in Sources */,
 				584E2E9028105E480039B1FF /* ContaViewController.swift in Sources */,
+				D9F39ABB29116F90004CFE4F /* CustomPatterns+DateFormatter.swift in Sources */,
 				584E2E5E280DC34F0039B1FF /* AppDelegate.swift in Sources */,
 				D9F39AB529114D6D004CFE4F /* TransacaoTableViewCell.swift in Sources */,
 				584E2E60280DC34F0039B1FF /* SceneDelegate.swift in Sources */,

@@ -9,25 +9,30 @@ import UIKit
 
 class ContaViewController: UITableViewController {
 
+    var contasAPI: ContasAPI?
+    var conta: Conta! {
+        didSet {
+            tableView.reloadData()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
+        if let contasAPI = contasAPI {
+            conta.historico = contasAPI.carregaHistorico(para: conta)
+        }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return conta.historico.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "TransacaoCell", for: indexPath) as? TransacaoTableViewCell else {
             fatalError("Não foi possível obter célula com identificador TransacaoCell para a tabela.")
         }
-        let transacao = Transacao(tipo: .transferenciaRecebida(.pix), valor: 200, interessado: "Alberto Souza")
+        let transacao = conta.historico[indexPath.row]
         cell.setup(transacao)
         return cell
     }
-    
-    
-    
 }
