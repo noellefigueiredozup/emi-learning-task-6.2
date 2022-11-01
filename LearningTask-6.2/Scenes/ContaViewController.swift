@@ -18,9 +18,20 @@ class ContaViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let contasAPI = contasAPI {
-            conta.historico = contasAPI.carregaHistorico(para: conta)
-        }
+        setupViews()
+        carregaHistorico()
+    }
+
+    private func setupViews() {
+        tableView.tableHeaderView = TableHeaderView.constroi(para: conta)
+        
+        tableView.register(SectionTitle.self, forHeaderFooterViewReuseIdentifier: SectionTitle.reuseId)
+        tableView.sectionHeaderHeight = SectionTitle.heightConstant
+    }
+
+    private func carregaHistorico() {
+        guard let contasAPI = contasAPI else { return }
+        conta.historico = contasAPI.carregaHistorico(para: conta)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -34,5 +45,18 @@ class ContaViewController: UITableViewController {
         let transacao = conta.historico[indexPath.row]
         cell.setup(transacao)
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: SectionTitle.reuseId) as? SectionTitle else {
+            fatalError("Não foi possível recuperar header view para a tabela")
+        }
+        
+        headerView.titulo = "Histórico"
+        return headerView
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

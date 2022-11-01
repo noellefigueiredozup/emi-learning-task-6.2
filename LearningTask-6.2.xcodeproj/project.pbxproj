@@ -22,6 +22,7 @@
 		D9F39ABB29116F90004CFE4F /* CustomPatterns+DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F39ABA29116F90004CFE4F /* CustomPatterns+DateFormatter.swift */; };
 		D9F39ABD29117024004CFE4F /* Currency+NumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F39ABC29117024004CFE4F /* Currency+NumberFormatter.swift */; };
 		D9F39ABF291170B1004CFE4F /* Conta.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F39ABE291170B1004CFE4F /* Conta.swift */; };
+		D9F39AC229117502004CFE4F /* SectionTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F39AC129117502004CFE4F /* SectionTitle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		D9F39ABA29116F90004CFE4F /* CustomPatterns+DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomPatterns+DateFormatter.swift"; sourceTree = "<group>"; };
 		D9F39ABC29117024004CFE4F /* Currency+NumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Currency+NumberFormatter.swift"; sourceTree = "<group>"; };
 		D9F39ABE291170B1004CFE4F /* Conta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conta.swift; sourceTree = "<group>"; };
+		D9F39AC129117502004CFE4F /* SectionTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		584E2E88280F576D0039B1FF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D9F39AC0291174C7004CFE4F /* Components */,
 				584E2E63280DC34F0039B1FF /* Main.storyboard */,
 				D9F39AB429114D6D004CFE4F /* TransacaoTableViewCell.swift */,
 			);
@@ -164,6 +167,14 @@
 				D9F39ABE291170B1004CFE4F /* Conta.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D9F39AC0291174C7004CFE4F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D9F39AC129117502004CFE4F /* SectionTitle.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +257,7 @@
 				584E2E85280F53830039B1FF /* Custom+UIColor.swift in Sources */,
 				584E2E9028105E480039B1FF /* ContaViewController.swift in Sources */,
 				D9F39ABB29116F90004CFE4F /* CustomPatterns+DateFormatter.swift in Sources */,
+				D9F39AC229117502004CFE4F /* SectionTitle.swift in Sources */,
 				584E2E5E280DC34F0039B1FF /* AppDelegate.swift in Sources */,
 				D9F39AB529114D6D004CFE4F /* TransacaoTableViewCell.swift in Sources */,
 				584E2E60280DC34F0039B1FF /* SceneDelegate.swift in Sources */,
